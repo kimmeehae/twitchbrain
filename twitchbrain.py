@@ -6,11 +6,11 @@ import urllib.request
 #this is the python 3 version of urllib2
 
 ##Also not working, from our old code.
-request = Request('https://api.twitch.tv/kraken/games/top?client_id=ail972181cbrcrj0n1aqi1yrhiultrz&?limit=1&offset=0')
+#request = Request('https://api.twitch.tv/kraken/games/top?client_id=ail972181cbrcrj0n1aqi1yrhiultrz&?limit=1&offset=0')
 #limit= changes number of results returned. It is optional. 
 
 
-urllib.request.urlopen('https://api.twitch.tv/kraken/games/top?client_id=ail972181cbrcrj0n1aqi1yrhiultrz&?limit=1&offset=0').read()
+data = urllib.request.urlopen('https://api.twitch.tv/kraken/games/top?client_id=ail972181cbrcrj0n1aqi1yrhiultrz&?limit=1&offset=0').read()
 
 response = urlopen(request)
 
