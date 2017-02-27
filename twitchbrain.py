@@ -9,8 +9,10 @@ import urllib.request
 #request = Request('https://api.twitch.tv/kraken/games/top?client_id=ail972181cbrcrj0n1aqi1yrhiultrz&?limit=1&offset=0')
 #limit= changes number of results returned. It is optional. 
 
+#this is how to send the access token according to twitch 
 
-data = urllib.request.urlopen('https://api.twitch.tv/kraken/games/top?client_id=ail972181cbrcrj0n1aqi1yrhiultrz&?limit=1&offset=0').read()
+
+urllib.request.urlopen('https://api.twitch.tv/kraken/games/top?client_id=ail972181cbrcrj0n1aqi1yrhiultrz&?limit=1&offset=0').read()
 
 response = urlopen(request)
 
